@@ -1,0 +1,48 @@
+
+
+/* Network Pattern Animation */
+.network-pattern {
+  animation: pattern-shift 30s linear infinite;
+}
+
+@keyframes pattern-shift {
+  0% {
+    background-position: 0 0, 0 0, 0 0, 0 0;
+  }
+  100% {
+    background-position: 60px 60px, 0 0, 0 0, 60px 60px;
+  }
+}
+
+/* Network Lines Animation */
+.network-lines {
+  animation: network-shift 60s linear infinite;
+}
+
+@keyframes network-shift {
+  0% {
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+  }
+  100% {
+    background-position: 80px 140px, 80px 140px, 120px 210px, 120px 210px, 80px 140px, 120px 210px;
+  }
+}
+
+/* Floating Particles Animations */
+.particle-0 { animation: float-0 25s infinite linear; }
+.particle-1 { animation: float-1 28s infinite linear; }
+.particle-2 { animation: float-2 22s infinite linear; }
+.particle-3 { animation: float-3 30s infinite linear; }
+.particle-4 { animation: float-4 26s infinite linear; }
+.particle-5 { animation: float-5 24s infinite linear; }
+.particle-6 { animation: float-6 27s infinite linear; }
+.particle-7 { animation: float-7 23s infinite linear; }
+
+@keyframes float-0 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(10px, 10px); } }
+@keyframes float-1 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-15px, 15px); } }
+@keyframes float-2 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(15px, -15px); } }
+@keyframes float-3 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-10px, -10px); } }
+@keyframes float-4 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(20px, 10px); } }
+@keyframes float-5 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-20px, 10px); } }
+@keyframes float-6 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(15px, 20px); } }
+@keyframes float-7 { 0%, 100% { transform: translate(0, 0); } 50% { transform: translate(-15px, -20px); } } 
