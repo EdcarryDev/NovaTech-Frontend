@@ -153,7 +153,7 @@ export function HotspotPage() {
       }
       const data = await response.json();
       // Ensure each user has a Password field, even if empty
-      data.data.users = data.data.users.map(user => ({
+      data.data.users = data.data.users.map((user: HotspotUser) => ({
         ...user,
         Password: user.Password || ''
       }));
